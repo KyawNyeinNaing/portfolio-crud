@@ -75,7 +75,7 @@ const Home = () => {
           <Row>
             <Col space='12'>
               <div className='portfolio_banner'>
-                <span className='portfolio_banner_subheading'>Hey! I am</span>
+                <span className='portfolio_banner_subheading'>Hi!</span>
                 <div className='portfolio_profile'>
                   <div className='portfolio_img'>
                     <img className='portfolio_profile_img' src='/icons/profile_img.jpg' alt='profile' />
