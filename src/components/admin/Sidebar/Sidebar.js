@@ -19,6 +19,7 @@ import AdminNavbarLinks from '../../admin/Navbars/AdminNavbarLinks'
 import styles from 'assets/jss/nextjs-material-dashboard/components/sidebarStyle.js'
 
 const Logo = styled.a`
+  cursor: pointer;
   &.portfolio_nav_logo {
     .portfolio_nav_logo_name {
       color: #ffffff;

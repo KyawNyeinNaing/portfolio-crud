@@ -87,7 +87,7 @@ const Admin = ({ children, ...rest }) => {
           {
             f_text: 'T',
             s_text: 'hetPai',
-            path: '/'
+            path: '/admin/dashboard'
           }
         }
         image={image}
