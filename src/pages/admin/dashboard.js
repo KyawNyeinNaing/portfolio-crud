@@ -15,18 +15,18 @@ import Cloud from "@material-ui/icons/Cloud";
 // layout for this page
 import AdminLayout from "@/layouts/AdminLayout";
 // core components
-import GridItem from "../../components/admin/Grid/GridItem";
-import GridContainer from "../../components/admin/Grid/GridContainer";
-import Table from "../../components/admin/Table/Table";
-import Tasks from "../../components/admin/Tasks/Tasks";
-import CustomTabs from "../../components/admin/Navbars/CustomTabs/CustomTabs";
-import Card from "../../components/admin/Card/Card";
-import CardHeader from "../../components/admin/Card/CardHeader";
-import CardIcon from "../../components/admin/Card/CardIcon";
-import CardBody from "../../components/admin/Card/CardBody";
-import CardFooter from "../../components/admin/Card/CardFooter";
+import GridItem from "@/components/admin/Grid/GridItem";
+import GridContainer from "@/components/admin/Grid/GridContainer";
+import Table from "@/components/admin/Table/Table";
+import Tasks from "@/components/admin/Tasks/Tasks";
+import CustomTabs from "@/components/admin/Navbars/CustomTabs/CustomTabs";
+import Card from "@/components/admin/Card/Card";
+import CardHeader from "@/components/admin/Card/CardHeader";
+import CardIcon from "@/components/admin/Card/CardIcon";
+import CardBody from "@/components/admin/Card/CardBody";
+import CardFooter from "@/components/admin/Card/CardFooter";
 
-import { bugs, website, server } from "../../variables/general";
+import { bugs, website, server } from "@/variables/general";
 
 import styles from 'assets/jss/nextjs-material-dashboard/views/dashboardStyle';
 

@@ -69,7 +69,7 @@ const Home = () => {
   }, [])
 
   return (
-    <HomeLayout title='Portfolio' data='/uploads/banner.jpg'>
+    <HomeLayout title='Home' data='/uploads/banner.jpg'>
       <Section>
         <Container>
           <Row>

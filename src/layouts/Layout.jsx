@@ -2,16 +2,18 @@ import Head from 'next/head'
 import Link from 'next/link'
 import MessengerCustomerChat from 'react-messenger-customer-chat'
 import { useEffect, useState } from 'react'
-import { Main, Copyright, Container, Row, Col, MenuIcon } from '../components'
-import { openDrawer, closeDrawer } from '../components/utils'
+import { Main, Copyright, Container, Row, Col, MenuIcon } from '@/components'
+import { openDrawer, closeDrawer } from '@/components/utils'
 
 import { FcInfo } from 'react-icons/fc'
 import { BsToggleOn, BsToggleOff } from 'react-icons/bs'
 import { FaPhoneAlt, FaMailBulk, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'
 
 import './layout.scss'
+import SEO from '@/components/SEO'
 
-const Layout = ({ children, title, keyword, desc, className }) => {
+const Layout = props => {
+  const { children, title, keyword, desc, className } = props
   const [theme, setTheme] = useState('light')
 
   useEffect(() => {
@@ -38,13 +40,14 @@ const Layout = ({ children, title, keyword, desc, className }) => {
 
   return (
     <article className={className}>
-      <Head>
+      <SEO {...props} />
+      {/* <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='keywords' content={keyword} />
         <meta name='description' content={desc} />
         <meta charSet='utf-8' />
         <title>{title}</title>
-      </Head>
+      </Head> */}
       <header className='portfolio_header'>
         <nav className='portfolio_nav'>
           <Container>
@@ -144,12 +147,6 @@ const Layout = ({ children, title, keyword, desc, className }) => {
       </footer>
     </article>
   )
-}
-
-Layout.defaultProps = {
-  title: 'My Porifolio',
-  keyword: 'Web Development, Programming',
-  desc: 'Get the latest news in web dev'
 }
 
 export default Layout

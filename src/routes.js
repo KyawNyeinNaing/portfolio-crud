@@ -26,12 +26,6 @@ const dashboardRoutes = [
     icon: FcSurvey,
   },
   {
-    path: '/maps',
-    name: 'Maps',
-    layout: '/admin',
-    icon: FcSupport,
-  },
-  {
     path: '/notifications',
     name: 'Notifications',
     layout: '/admin',

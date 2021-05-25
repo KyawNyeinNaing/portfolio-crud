@@ -55,8 +55,8 @@ const App = props => {
           name='viewport'
           content='width=device-width, initial-scale=1, shrink-to-fit=no'
         />
-        <title>Admin Panel</title>
-        <script src='https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE'></script>
+        <title>Admin Panel | Portfolio</title>
+        {/* <script src='https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE'></script> */}
       </Head>
       <Layout>
         <Component {...pageProps} />
