@@ -1,21 +1,21 @@
-import React from "react";
+import React from 'react'
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import InputLabel from "@material-ui/core/InputLabel";
+import { makeStyles } from '@material-ui/core/styles'
+import InputLabel from '@material-ui/core/InputLabel'
 // layout for this page
-import Admin from "../../layouts/AdminLayout";
+import Admin from '../../layouts/AdminLayout'
 // core components
-import GridItem from "../../components/Grid/GridItem";
-import GridContainer from "../../components/Grid/GridContainer";
-import CustomInput from "../../components/CustomInput/CustomInput";
-import Button from "../../components/CustomButtons/Button";
-import Card from "../../components/Card/Card";
-import CardHeader from "../../components/Card/CardHeader";
-import CardAvatar from "../../components/Card/CardAvatar";
-import CardBody from "../../components/Card/CardBody";
-import CardFooter from "../../components/Card/CardFooter";
+import GridItem from '../../components/admin/Grid/GridItem'
+import GridContainer from '../../components/admin/Grid/GridContainer'
+import CustomInput from '../../components/admin/CustomInput/CustomInput'
+import Button from '../../components/admin/CustomButtons/Button'
+import Card from '../../components/admin/Card/Card'
+import CardHeader from '../../components/admin/Card/CardHeader'
+import CardAvatar from '../../components/admin/Card/CardAvatar'
+import CardBody from '../../components/admin/Card/CardBody'
+import CardFooter from '../../components/admin/Card/CardFooter'
 
-import avatar from "assets/img/faces/marc.jpg";
+import avatar from 'assets/img/faces/marc.jpg'
 
 const styles = {
   cardCategoryWhite: {
@@ -34,11 +34,11 @@ const styles = {
     marginBottom: "3px",
     textDecoration: "none",
   },
-};
+}
 
 function UserProfile() {
-  const useStyles = makeStyles(styles);
-  const classes = useStyles();
+  const useStyles = makeStyles(styles)
+  const classes = useStyles()
   return (
     <div>
       <GridContainer>
@@ -175,9 +175,9 @@ function UserProfile() {
         </GridItem>
       </GridContainer>
     </div>
-  );
+  )
 }
 
-UserProfile.layout = Admin;
+UserProfile.layout = Admin
 
-export default UserProfile;
+export default UserProfile

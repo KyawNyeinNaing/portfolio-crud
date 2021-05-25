@@ -87,7 +87,7 @@ ul {
   .spinner {
     @media screen and (max-width: 767px) {
       right: 40%;
-  }
+    }
 
     .spinner-icon {
       width: 35px;
@@ -102,6 +102,43 @@ ul {
   .Toastify__toast {
     .Toastify__progress-bar {
       opacity: 0 !important;
+    }
+  }
+}
+
+.portfolio_nav_logo {
+  color: var(--text-color-secondary);
+  padding: 1rem 0;
+  font-size: 24px;
+  display: inline-block;
+  margin-right: 1rem;
+  line-height: inherit;
+  white-space: nowrap;
+  font-weight: 900;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: #3e64ff;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+
+  .portfolio_nav_logo_name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateX(10px);
+    color: var(--text-color-secondary);
+
+    span {
+      color: var(--white);
     }
   }
 }

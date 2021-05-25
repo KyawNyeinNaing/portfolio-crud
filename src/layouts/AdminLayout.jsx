@@ -5,13 +5,11 @@ import PerfectScrollbar from "perfect-scrollbar"
 import "perfect-scrollbar/css/perfect-scrollbar.css"
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles"
-import ListItem from "@material-ui/core/ListItem";
-import List from "@material-ui/core/List";
 
 // core components
-import Navbar from "../components/Navbars/Navbar"
-import Sidebar from "../components/Sidebar/Sidebar"
-import FixedPlugin from "../components/FixedPlugin/FixedPlugin"
+import Navbar from "../components/admin/Navbars/Navbar"
+import Sidebar from "../components/admin/Sidebar/Sidebar"
+import ChangeTheme from "../components/admin/FixedPlugin/FixedPlugin"
 
 import routes from "../routes"
 
@@ -19,7 +17,7 @@ import styles from "assets/jss/nextjs-material-dashboard/layouts/adminStyle"
 import footerStyles from "assets/jss/nextjs-material-dashboard/components/footerStyle.js"
 
 import bgImage from "assets/img/sidebar-2.jpg"
-import logo from "assets/img/reactlogo.png"
+import { Copyright } from "@/components"
 
 let ps
 
@@ -85,8 +83,13 @@ const Admin = ({ children, ...rest }) => {
     <div className={classes.wrapper}>
       <Sidebar
         routes={routes}
-        logoText={"Creative Tim"}
-        logo={logo}
+        logoText={
+          {
+            f_text: 'T',
+            s_text: 'hetPai',
+            path: '/'
+          }
+        }
         image={image}
         handleDrawerToggle={handleDrawerToggle}
         open={mobileOpen}
@@ -99,7 +102,7 @@ const Admin = ({ children, ...rest }) => {
           handleDrawerToggle={handleDrawerToggle}
           {...rest}
         />
-        {/* On the /maps route we want the map to be on full screen - this is not possible if the content and conatiner classes are present because they have some paddings which would make the map smaller */}
+
         {getRoute() ? (
           <div className={classes.content}>
             <div className={classes.container}>{children}</div>
@@ -109,52 +112,14 @@ const Admin = ({ children, ...rest }) => {
         )}
 
         {getRoute() ?
-          <footer className={footerClasses.footer}>
-            <div className={footerClasses.container}>
-              <div className={footerClasses.left}>
-                <List className={footerClasses.list}>
-                  <ListItem className={footerClasses.inlineBlock}>
-                    <a href="#home" className={footerClasses.block}>
-                      Home
-                    </a>
-                  </ListItem>
-                  <ListItem className={footerClasses.inlineBlock}>
-                    <a href="#company" className={footerClasses.block}>
-                      Company
-                    </a>
-                  </ListItem>
-                  <ListItem className={footerClasses.inlineBlock}>
-                    <a href="#portfolio" className={footerClasses.block}>
-                      Portfolio
-                    </a>
-                  </ListItem>
-                  <ListItem className={footerClasses.inlineBlock}>
-                    <a href="#blog" className={footerClasses.block}>
-                      Blog
-                    </a>
-                  </ListItem>
-                </List>
-              </div>
-              <p className={footerClasses.right}>
-                <span>
-                  &copy; {1900 + new Date().getYear()}{" "}
-                  <a
-                    href="https://www.creative-tim.com?ref=njsmd-footer"
-                    target="_blank"
-                    className={footerClasses.a}
-                  >
-                    Creative Tim
-              </a>
-              , made with love for a better web
-            </span>
-              </p>
-            </div>
+          <footer>
+            <Copyright data='Thet Pai' bgColor='white' />
           </footer>
           :
           null
         }
 
-        <FixedPlugin
+        <ChangeTheme
           bgColor={color}
           bgImages={image}
           fixedClasses={fixedClasses}

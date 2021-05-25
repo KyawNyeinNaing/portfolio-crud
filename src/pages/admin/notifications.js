@@ -9,14 +9,14 @@ import AddAlert from "@material-ui/icons/AddAlert";
 // layout for this page
 import Admin from "../../layouts/AdminLayout";
 // core components
-import GridItem from "../../components/Grid/GridItem";
-import GridContainer from "../../components/Grid/GridContainer";
-import Button from "../../components/CustomButtons/Button";
-import SnackbarContent from "../../components/Snackbar/SnackbarContent";
-import Snackbar from "../../components/Snackbar/Snackbar";
-import Card from "../../components/Card/Card";
-import CardHeader from "../../components/Card/CardHeader";
-import CardBody from "../../components/Card/CardBody";
+import GridItem from "../../components/admin/Grid/GridItem";
+import GridContainer from "../../components/admin/Grid/GridContainer";
+import Button from "../../components/admin/CustomButtons/Button";
+import SnackbarContent from "../../components/admin/Snackbar/SnackbarContent";
+import Snackbar from "../../components/admin/Snackbar/Snackbar";
+import Card from "../../components/admin/Card/Card";
+import CardHeader from "../../components/admin/Card/CardHeader";
+import CardBody from "../../components/admin/Card/CardBody";
 
 const styles = {
   cardCategoryWhite: {

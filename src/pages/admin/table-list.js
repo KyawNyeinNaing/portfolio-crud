@@ -4,12 +4,12 @@ import { makeStyles } from "@material-ui/core/styles";
 // layout for this page
 import Admin from "../../layouts/AdminLayout";
 // core components
-import GridItem from "../../components/Grid/GridItem";
-import GridContainer from "../../components/Grid/GridContainer";
-import Table from "../../components/Table/Table";
-import Card from "../../components/Card/Card";
-import CardHeader from "../../components/Card/CardHeader";
-import CardBody from "../../components/Card/CardBody";
+import GridItem from "../../components/admin/Grid/GridItem";
+import GridContainer from "../../components/admin/Grid/GridContainer";
+import Table from "../../components/admin/Table/Table";
+import Card from "../../components/admin/Card/Card";
+import CardHeader from "../../components/admin/Card/CardHeader";
+import CardBody from "../../components/admin/Card/CardBody";
 
 const styles = {
   cardCategoryWhite: {

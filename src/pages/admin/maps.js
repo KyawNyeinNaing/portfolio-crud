@@ -1,6 +1,6 @@
 import React from "react";
 // layout for this page
-import Admin from "../../layout/Admin";
+import Admin from "../../layouts/AdminLayout";
 
 const CustomSkinMap = () => {
   const mapRef = React.useRef(null);

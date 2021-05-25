@@ -38,7 +38,8 @@ export default function RegularButton(props) {
     [classes.link]: link,
     [classes.justIcon]: justIcon,
     [className]: className,
-  });
+  })
+  
   return (
     <Button {...rest} classes={{ ...muiClasses, root: btnClasses }}>
       {children}
