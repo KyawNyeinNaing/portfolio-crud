@@ -8,43 +8,6 @@ const InputGroup = styled.div`
   &:last-child {
     margin-bottom: 0;
   }
-  .react-datepicker-popper {
-    z-index: 9;
-  }
-  .react-datepicker-wrapper {
-    width: 100%;
-    .datepicker {
-      display: block;
-      width: 100%;
-      height: 40px;
-      padding: 7px 15px;
-      font-size: ${fontSize.md}px;
-      font-weight: ${fontWeight.md};
-      line-height: 1.5;
-      color: ${colors.inputColor};
-      background-color: ${colors.white};
-      background-clip: padding-box;
-      border: 1px solid ${colors.whisper};
-      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-      outline: 0;
-      margin-top: 3px;
-      &:disabled {
-        background: ${colors.smoke};
-      }
-      &.error {
-        border: 1px solid ${colors.secondary};
-      }
-      
-      &:focus {
-        border-color: ${colors.inputBorder}
-      }
-
-      &::placeholder {
-        opacity: .3;
-        font-weight: 400;
-      }
-    }
-  }
   &.custom-check {
     display: flex;
     align-items: center;
@@ -56,7 +19,7 @@ const InputGroup = styled.div`
         &:checked {
           +label {
             &:before {
-              background-color: ${colors.white};
+              background-color: transparent;
             }
             &:after {
               opacity: 1;
@@ -67,7 +30,7 @@ const InputGroup = styled.div`
         &:not(:checked) {
           +label {
             &:before {
-              background-color: ${colors.white};
+              background-color: transparent;
             }
             &:after {
               opacity: 0;
@@ -94,7 +57,7 @@ const InputGroup = styled.div`
         margin: auto;
         left: 0;
         border: 1px solid ${colors.light};
-        border-radius: 0;
+        border-radius: .15rem;
         width: 15px;
         height: 15px;
       }
@@ -107,7 +70,7 @@ const InputGroup = styled.div`
         left: 5px;
         width: 5px;
         height: 9px;
-        border: 1px solid ${colors.secondary};
+        border: 1px solid var(--white);
         border-width: 0 2px 2px 0;
         transform: rotate(45deg);
       }
@@ -212,11 +175,6 @@ const Input = styled.input`
   
   &:focus {
     border-color: ${colors.inputBorder}
-  }
-
-  &::placeholder {
-    opacity: .3;
-    font-weight: 400;
   }
 
   &.phone {

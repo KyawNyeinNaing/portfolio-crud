@@ -5,7 +5,7 @@ const Admin = () => {
   useEffect(() => {
     // auth
 
-    Router.push("/admin/dashboard")
+    Router.push("/auth/login")
   })
 
   return <div />

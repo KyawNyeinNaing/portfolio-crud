@@ -26,6 +26,10 @@
   --white: #252329;
 }
 
+::placeholder {
+  font-weight: 200;
+}
+
 html,
 body {
   background-color: var(--background-theme-color);
