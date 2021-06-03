@@ -13,11 +13,11 @@ import { resume, projects } from '../../data'
 const About = () => {
   const [show, setShow] = useState('education')
   const [theme, setTheme] = useState()
-  
+
   const filteredEdu = resume?.filter(resume => resume?.name === 'Educations')
   const filteredExp = resume?.filter(resume => resume?.name === 'Experience')
   const filteredSkill = resume?.filter(resume => resume?.name === 'Skills')
-  
+
   useEffect(() => {
     let currentOffset = document.querySelector('#project')?.offsetTop - 100
     setTheme(localStorage.getItem('theme'))
@@ -29,22 +29,25 @@ const About = () => {
       <Section>
         <Container>
           <Row>
-            <Col md='6'>
+            <Col md='4'>
               <div className='portfolio_img'>
                 <img src='./uploads/about.jpg' alt='about' />
               </div>
             </Col>
 
-            <Col md='6'>
+            <Col md='8'>
               <div className='portfolio_detail_panel'>
                 <h2 className='portfolio_detail_panel_heading'>
-                  About Me
+                  Biography
                 </h2>
                 <p>
                   I am a person who is positive about every spect of life. There are many things I like to do, to see,
                   and to experience. I like to read, I like to think, I like to travel, and so on, And, I like to laugh. I
                   always wanted to be a great developer.
                   This is a brief introduction of myself.
+                </p>
+                <p>
+                  I graduated with my degree in Mathematics last 6 years ago. I choose that field of study because of I 've always been interested in developing websites, web app and application.
                 </p>
                 <div className='portfolio_detail_panel_row'>
                   <div className='portfolio_detail_panel_label'>Name</div>
@@ -68,6 +71,20 @@ const About = () => {
                   <div className='portfolio_detail_panel_label'>Phone</div>
                   <div className='portfolio_detail_panel_value'>
                     <Link href='tel:+959420170266'>+959-42017-026-6</Link>
+                  </div>
+                </div>
+
+                <div className='portfolio_detail_panel_row'>
+                  <div className='portfolio_detail_panel_profile'>
+                    <h5>Profile</h5>
+                    <ul>
+                      <li>I have 5 years of relevant frontend development experience.</li>
+                      <li>3 years of front-end web programming experience with JavaScript, CSS3, HTML5.</li>
+                      <li>2 years of production experience with SPA framework like ReactJS, understand SPA and familiar with REST APIs.</li>
+                      <li>I am Proficient in web and mobile frontend development; ReactJS, JavaScript, JSON, HTML 5, CSS, GIT</li>
+                      <li>I have experience with React.JS/ Next.JS along with Redux</li>
+                      <li>I am understanding on backend technology such as Laravel</li>
+                    </ul>
                   </div>
                 </div>
 

@@ -4,6 +4,7 @@ import './about.scss'
 
 const ProgressBar = styled.div`
   width: ${props => props?.skill}%;
+  transition: all .3s ease;
 `
 
 const Skills = ({ skills }) => {

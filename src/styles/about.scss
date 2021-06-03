@@ -39,6 +39,18 @@
     .portfolio_detail_panel_value {
       color: var(--text-color);
     }
+    .portfolio_detail_panel_profile {
+      ul {
+        padding-left: 20px;
+        list-style-type: square;
+        li {
+          margin-bottom: 5px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
   }
 
   .portfolio_complete_project {
