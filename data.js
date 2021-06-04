@@ -101,6 +101,10 @@ export const resume = [
         skill: '60'
       },
       {
+        language: 'Google Analytics',
+        skill: '60'
+      },
+      {
         language: 'MongoDB',
         skill: '60'
       },
