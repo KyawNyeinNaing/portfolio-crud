@@ -82,7 +82,7 @@ const About = () => {
                       <li>2 years of front-end web programming experience with JavaScript, CSS3, HTML5.</li>
                       <li>3 years of production experience with SPA framework like ReactJS, understand SPA and familiar with REST APIs.</li>
                       <li>I am Proficient in web and mobile frontend development; ReactJS, NexJS, JavaScript, Jquery, JSON, HTML5, CSS3, GIT</li>
-                      <li>I have experience with React.JS/ Next.JS along with Redux</li>
+                      <li>I have experience with React.JS/ Next.JS along with Redux, Styled-components</li>
                       <li>I am understanding on backend technology such as Laravel</li>
                     </ul>
                   </div>
