@@ -37,7 +37,7 @@ export const resume = [
     data: [
       {
         date: '2016 - 2018',
-        title: 'Jinior Frontend Developer',
+        title: 'Junior Frontend Developer',
         position: 'Smilax Global Co.,Ltd'
       },
       {
@@ -52,7 +52,7 @@ export const resume = [
       },
       {
         date: '2018 - Present',
-        title: 'React Developer',
+        title: 'Senior React Developer',
         position: 'Innovix Solutions Co.,Ltd'
       }
     ]
@@ -70,19 +70,19 @@ export const resume = [
       },
       {
         language: 'Next Js',
-        skill: '75'
+        skill: '80'
       },
       {
         language: 'Vue',
         skill: '50'
       },
       {
-        language: 'Laravel',
-        skill: '30'
-      },
-      {
         language: 'Jquery',
         skill: '80'
+      },
+      {
+        language: 'Laravel',
+        skill: '40'
       },
       {
         language: 'Wordpress',
@@ -163,7 +163,7 @@ export const projects = [
     project_name: 'Grand Asean',
     project_type: 'Travel',
     project_image: '/uploads/project-2.jpg',
-    project_link: '/',  
+    project_link: '/',
     techanical: [
       'javascript',
       'jquery',
