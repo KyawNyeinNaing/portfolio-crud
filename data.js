@@ -146,7 +146,7 @@ export const projects = [
   {
     project_name: 'Stead Fast',
     project_type: 'Medical',
-    project_image: '/uploads/project-3.jpg',
+    project_image: '/uploads/project-15.jpg',
     project_link: '/',
     techanical: [
       'React Js'
