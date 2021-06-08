@@ -73,6 +73,10 @@ export const resume = [
         skill: '80'
       },
       {
+        language: 'Express Js',
+        skill: '75'
+      },
+      {
         language: 'Vue',
         skill: '50'
       },
